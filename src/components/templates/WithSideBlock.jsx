@@ -7,6 +7,7 @@ import menu1 from '@public/menu1.svg';
 import menu2 from '@public/menu2.svg';
 import menu3 from '@public/menu3.svg';
 import menu4 from '@public/menu4.svg';
+import menu31 from "@public/import.svg";
 import { useLocation, useNavigate } from "react-router-dom";
 import { clearLS } from "../../store/localStorage";
 
@@ -19,7 +20,11 @@ const WithSideBlock = ({ children, sideContent, right, ratio}) => {
   };
   const logout = () => {
     clearLS();
-    goToPage(ROUTES.root)();
+    if (pathname===ROUTES.root) {
+      window.location.reload(false);
+    } else {
+      goToPage(ROUTES.root)();
+    }
   };
 
   const leftSideContent = (
@@ -27,6 +32,7 @@ const WithSideBlock = ({ children, sideContent, right, ratio}) => {
       <ButtonWithPic src={menu1} txt={text.button.menu1} onClick={goToPage(ROUTES.menu)} isActive={ROUTES.menu === pathname} />
       <ButtonWithPic src={menu2} txt={text.button.menu2}  onClick={goToPage(ROUTES.documentsReceivedSupplies)} isActive={ROUTES.documentsReceivedSupplies === pathname} />
       <ButtonWithPic src={menu3} txt={text.button.menu3} onClick={goToPage(ROUTES.accounting)} isActive={ROUTES.accounting === pathname} />
+      <ButtonWithPic src={menu31} txt="База даних" onClick={goToPage("/db")} isActive={"/db" === pathname} />
       <ButtonWithPic src={menu4} txt={text.button.menu4} onClick={logout} isActive={false} />
     </Flex>
   );

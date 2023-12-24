@@ -23,7 +23,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "concurrently \"json-server --watch db.json\" \"set PORT=3001 && react-app-rewired start\"",
+    "start": "concurrently \"json-server --watch public/db.json\" \"set PORT=3001 && react-app-rewired start\"",
     "build": "react-app-rewired build",
     "test": "react-app-rewired test",
     "eject": "react-app-rewired eject",

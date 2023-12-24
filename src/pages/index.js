@@ -6,3 +6,4 @@ export { default as Accounting } from './accounting.jsx';
 export { default as OrderHistory } from './orderHistory.jsx';
 export { default as DocumentsReceivedSupplies } from './documentsReceivedSupplies.jsx';
 export { default as SignIn2 } from "./signIn2.jsx";
+export { default as Database } from "./database.jsx";

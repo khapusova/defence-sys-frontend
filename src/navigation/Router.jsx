@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { ROUTES } from '@constants';
 import { OrderHistory, SignIn, MainAuthorized, MainNotAuthorized, Accounting } from '@pages';
 import ProtectedRoute from './ProtectedRoute';
-import { DocumentsReceivedSupplies, Menu, SignIn2 } from '../pages';
+import { Database, DocumentsReceivedSupplies, Menu, SignIn2 } from '../pages';
 import Main from './Main';
 
 const Router = () => {
@@ -12,6 +12,11 @@ const Router = () => {
       <BrowserRouter>
         <Routes>
           <Route element={<SignIn />} path={ROUTES.signUp} />
+          <Route path='db' element={
+            <ProtectedRoute>
+              <Database />
+            </ProtectedRoute>
+          } />
           <Route element={<SignIn2 />} path={ROUTES.signIn} />
           <Route
             element={<Main />}

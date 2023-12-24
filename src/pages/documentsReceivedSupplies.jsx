@@ -157,7 +157,7 @@ const Page = () => {
       };
       dispatch(updateoprydatkuvannyas(body));
       closeModal2();
-      setModalData(tableData?.find(el=>el.id===modalData.id));
+      setModalData(tableData?.find(el=>el?.id===modalData?.id));
     } else {
       showError("Не всі поля заповнені!");
     }

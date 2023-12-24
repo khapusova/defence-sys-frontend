@@ -4,6 +4,7 @@ import { Typography, Button, Flex, Image } from "@atoms";
 import { WithSideBlock } from "@templates";
 import logo from '@public/logo.svg';
 import { SignInForm } from "../components/organisms";
+import { useNavigate } from "react-router-dom";
 
 const sideContent = (
   <Flex flexDirection="column" justifyContent="center" alignItms="center">
@@ -12,20 +13,26 @@ const sideContent = (
   </Flex>
 );
 
-const Page = () => (
-  <WithSideBlock right sideContent={sideContent} ratio={70}>
-    <Image src={logo} margin="20px" alighSelf="start" alt="logo" width="198px" />
-    <Flex justifyContent="center" margin="auto" flexDirection="column" width="80%">
-      <Typography type="title" fontSize="35px">
-        {text.title.signIn}
-      </Typography>
-      <SignInForm />
-      <Flex justifyContent="space-between" marginTop="5%" marginBottom="5%">
-        <Button minWidth="25%" styleType="primary">{text.button.back}</Button>
-        <Button minWidth="25%" styleType="primary">{text.button.continue}</Button>
+const Page = () => {
+  const navigate = useNavigate();
+  const goBack = () => {
+    navigate(-1);
+  };
+  return (
+    <WithSideBlock right sideContent={sideContent} ratio={70}>
+      <Image src={logo} margin="20px" alighSelf="start" alt="logo" width="198px" />
+      <Flex justifyContent="center" margin="auto" flexDirection="column" width="80%">
+        <Typography type="title" fontSize="35px">
+          {text.title.signIn}
+        </Typography>
+        <SignInForm />
+        <Flex justifyContent="space-between" marginTop="5%" marginBottom="5%">
+          <Button minWidth="25%" styleType="primary" onClick={goBack}>{text.button.back}</Button>
+          <Button minWidth="25%" styleType="primary">{text.button.continue}</Button>
+        </Flex>
       </Flex>
-    </Flex>
-  </WithSideBlock>
-);
+    </WithSideBlock>
+  );
+};
 
 export default Page;

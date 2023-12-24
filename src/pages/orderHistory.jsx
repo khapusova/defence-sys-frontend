@@ -10,6 +10,7 @@ import { Image, Input } from "../components/atoms";
 import deleteIcon from "@public/delete.svg";
 import { showError } from "../utils/notification";
 import moment from "moment";
+import _ from 'lodash';
 
 
 const formattedDate = (inputDate) => moment(inputDate, 'YYYY-MM-DD').format('DD.MM.YYYY');
@@ -196,7 +197,7 @@ const Page = () => {
       return acc;
     }, {});
 
-    if (!formControlsObject.formeal  || !formControlsObject.price || ! formControlsObject.food) {
+    if (!formControlsObject.formeal  || !formControlsObject.price || ! formControlsObject?.food) {
       showError('Не всі поля заповнені!');
     } else {
       const myObj = {
@@ -206,8 +207,8 @@ const Page = () => {
       };
       if (modalData2?.date) {
         setDaysData(prev => {
-          const dat = {...prev};
-          dat[modalData2.date][modalData2.time].food = dat[modalData2.date][modalData2.time].food ? [...dat[modalData2.date][modalData2.time].food, myObj] : [myObj];
+          const dat = _.cloneDeep(prev);
+          dat[modalData2.date][modalData2.time].food = dat[modalData2.date][modalData2.time]?.food ? [...dat[modalData2.date][modalData2.time]?.food, myObj] : [myObj];
           return dat;
         });
         setIsShown2(-1);
