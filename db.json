@@ -1,0 +1,594 @@
+{
+  "auth": [
+    {
+      "id": "login",
+      "data": [
+        {
+          "token": "user1",
+          "email": "micah.donnelly@example.org",
+          "password": "123abc"
+        },
+        {
+          "token": "user2",
+          "email": "micah.donnelly2@example.org",
+          "password": "123abc2"
+        }
+      ]
+    }
+  ],
+  "orderHistory": [
+    {
+      "adress": "dfafasfa",
+      "contract": 1,
+      "daysCount": 3,
+      "deadlineDate": "2023-12-19",
+      "reason": "asfasf",
+      "startDate": "2023-12-19",
+      "orderId": 78495791,
+      "id": 78495791,
+      "orderName": "Замовлення 19.12.2023 - 22.12.2023",
+      "orderStatus": "SIGNED",
+      "order": {
+        "15/12/2023": {
+          "breakfast": {},
+          "lunch": {},
+          "dinner": {}
+        },
+        "16/12/2023": {
+          "breakfast": {},
+          "lunch": {},
+          "dinner": {}
+        },
+        "17/12/2023": {
+          "breakfast": {},
+          "lunch": {},
+          "dinner": {}
+        }
+      }
+    },
+    {
+      "adress": "dfafasfa",
+      "contract": 2,
+      "daysCount": 4,
+      "deadlineDate": "2023-12-19",
+      "reason": "asfasf",
+      "startDate": "2023-12-18",
+      "orderId": 78495795,
+      "id": 78495795,
+      "orderName": "Замовлення 18.12.2023 - 22.12.2023",
+      "orderStatus": "UNSIGNED",
+      "order": {
+        "19/12/2023": {
+          "breakfast": {},
+          "lunch": {},
+          "dinner": {}
+        },
+        "18/12/2023": {
+          "breakfast": {},
+          "lunch": {},
+          "dinner": {}
+        }
+      }
+    }
+  ],
+  "documentsReceivedSuppliesHistory": [
+    {
+      "id": "784957882",
+      "documentCode": "1311",
+      "documentNumber": "231",
+      "date": "2023-12-21",
+      "supplyReceivedType": "Від постачальника",
+      "supplyReceivedContract": "1322.2323.4242",
+      "isSigned": false,
+      "supplies": [
+        {
+          "supplyCode": "3424",
+          "supplyName": "Яблуко",
+          "supplyUnit": "кг",
+          "supplyCount": "234",
+          "supplyPricePerUnit": "23",
+          "startDate": "",
+          "endDate": "",
+          "days": "",
+          "sum": ""
+        },
+        {
+          "supplyCode": "3242",
+          "supplyName": "Морква",
+          "supplyUnit": "кг",
+          "supplyCount": "34",
+          "supplyPricePerUnit": "243",
+          "startDate": "",
+          "endDate": "",
+          "days": "",
+          "sum": ""
+        }
+      ],
+      "documentStatus": "SIGNED"
+    },
+    {
+      "id": 784957885,
+      "documentCode": 1312,
+      "documentNumber": "123",
+      "date": "2023-08-13",
+      "supplyReceivedType": "Від постачальника",
+      "supplyReceivedContract": "1322.2323.4242",
+      "isSigned": false,
+      "supplies": [
+        {
+          "supplyCode": "213",
+          "supplyName": "Яблуко",
+          "supplyUnit": "кг",
+          "supplyCount": "24",
+          "supplyPricePerUnit": "12",
+          "startDate": "2023-12-05",
+          "endDate": "2023-12-19",
+          "days": "",
+          "sum": ""
+        },
+        {
+          "supplyCode": "2013",
+          "supplyName": "Морква",
+          "supplyUnit": "кг",
+          "supplyCount": "13",
+          "supplyPricePerUnit": "12",
+          "startDate": "",
+          "endDate": "",
+          "days": "",
+          "sum": ""
+        },
+        {
+          "supplyCode": "21312",
+          "supplyName": "Капуста",
+          "supplyUnit": "кг",
+          "supplyCount": "300",
+          "supplyPricePerUnit": "25",
+          "startDate": "",
+          "endDate": "",
+          "days": "",
+          "sum": ""
+        },
+        {
+          "supplyCode": "132",
+          "supplyName": "Гарбуз",
+          "supplyUnit": "кг",
+          "supplyCount": "3",
+          "supplyPricePerUnit": "213",
+          "startDate": "",
+          "endDate": "",
+          "days": "",
+          "sum": ""
+        }
+      ],
+      "documentStatus": "SIGNED"
+    },
+    {
+      "id": 784957887,
+      "documentCode": 1313,
+      "documentNumber": "3",
+      "date": "2023-12-15",
+      "supplyReceivedType": "wef",
+      "supplyReceivedContract": "wefwe",
+      "isSigned": false,
+      "supplies": [
+        {
+          "supplyCode": "3",
+          "supplyName": "картопля",
+          "supplyUnit": "кг",
+          "supplyCount": "3",
+          "supplyPricePerUnit": "213",
+          "startDate": "2023-12-21",
+          "endDate": "2024-01-02",
+          "days": "",
+          "sum": "112"
+        }
+      ]
+    },
+    {
+      "id": 784957890,
+      "documentCode": 1314,
+      "documentNumber": "2",
+      "date": "2023-12-15",
+      "supplyReceivedType": "tgr",
+      "supplyReceivedContract": "dg"
+    },
+    {
+      "id": 784957894,
+      "documentCode": 1315,
+      "documentNumber": "2",
+      "date": "2023-12-15",
+      "supplyReceivedType": "tgr",
+      "supplyReceivedContract": "dg"
+    }
+  ],
+  "accounting": [
+    {
+      "id": "78495790",
+      "documentName": "Загальновійськова",
+      "documentStatus": "SIGNED",
+      "date": "29.10.2023",
+      "menuRozkladkaUsage": {
+        "supplyUsedBreakfast": {
+          "mealsCount": "667",
+          "supplyPerMeal": [
+            {
+              "supplyName": "Капуста",
+              "supplyUnit": "кг",
+              "supplyCount": 0.1
+            },
+            {
+              "supplyName": "Морква",
+              "supplyUnit": "кг",
+              "supplyCount": 0.1
+            },
+            {
+              "supplyName": "Гречка",
+              "supplyUnit": "кг",
+              "supplyCount": 0.3
+            },
+            {
+              "supplyName": "Яблуко",
+              "supplyUnit": "кг",
+              "supplyCount": 0.15
+            },
+            {
+              "supplyUnit": "кг",
+              "supplyCount": null
+            },
+            {
+              "supplyUnit": "кг",
+              "supplyCount": null
+            },
+            {
+              "supplyUnit": "кг",
+              "supplyCount": null
+            },
+            {
+              "supplyUnit": "кг",
+              "supplyCount": null
+            }
+          ]
+        },
+        "supplyUsedLunch": {
+          "mealsCount": "660",
+          "supplyPerMeal": [
+            {
+              "supplyName": "Капуста",
+              "supplyUnit": "кг",
+              "supplyCount": 0.2
+            },
+            {
+              "supplyName": "Морква",
+              "supplyUnit": "кг",
+              "supplyCount": 0.3
+            },
+            {
+              "supplyName": "Гречка",
+              "supplyUnit": "кг",
+              "supplyCount": 0.2
+            },
+            {
+              "supplyName": "Яблуко",
+              "supplyUnit": "кг",
+              "supplyCount": 0.15
+            },
+            {
+              "supplyUnit": "кг",
+              "supplyCount": null
+            },
+            {
+              "supplyUnit": "кг",
+              "supplyCount": null
+            },
+            {
+              "supplyUnit": "кг",
+              "supplyCount": null
+            },
+            {
+              "supplyUnit": "кг",
+              "supplyCount": null
+            }
+          ]
+        },
+        "supplyUsedDiner": {
+          "mealsCount": "667",
+          "supplyPerMeal": [
+            {
+              "supplyName": "Капуста",
+              "supplyUnit": "кг",
+              "supplyCount": 0.5
+            },
+            {
+              "supplyName": "Морква",
+              "supplyUnit": "кг",
+              "supplyCount": 0.1
+            },
+            {
+              "supplyName": "Гречка",
+              "supplyUnit": "кг",
+              "supplyCount": 0.3
+            },
+            {
+              "supplyName": "Яблуко",
+              "supplyUnit": "кг",
+              "supplyCount": 0.15
+            },
+            {
+              "supplyUnit": "кг",
+              "supplyCount": null
+            },
+            {
+              "supplyUnit": "кг",
+              "supplyCount": null
+            },
+            {
+              "supplyUnit": "кг",
+              "supplyCount": null
+            },
+            {
+              "supplyUnit": "кг",
+              "supplyCount": null
+            }
+          ]
+        },
+        "supplyAvailable": [
+          {
+            "supplyName": "Морква",
+            "supplyUnit": "кг",
+            "supplyCount": 100
+          },
+          {
+            "supplyName": "Гречка",
+            "supplyUnit": "кг",
+            "supplyCount": 100
+          },
+          {
+            "supplyName": "Капуста",
+            "supplyUnit": "кг",
+            "supplyCount": 100
+          },
+          {
+            "supplyName": "Яблуко",
+            "supplyUnit": "кг",
+            "supplyCount": 100
+          }
+        ]
+      }
+    },
+    {
+      "id": "78495789",
+      "documentName": "Загальновійськова",
+      "documentStatus": "SIGNED",
+      "date": "30.10.2023",
+      "menuRozkladkaUsage": {
+        "supplyUsedBreakfast": {
+          "mealsCount": 667,
+          "supplyPerMeal": [
+            {
+              "supplyName": "Капуста",
+              "supplyUnit": "кг",
+              "supplyCount": 0.1
+            },
+            {
+              "supplyName": "Морква",
+              "supplyUnit": "кг",
+              "supplyCount": 0.1
+            },
+            {
+              "supplyName": "Гречка",
+              "supplyUnit": "кг",
+              "supplyCount": 0.3
+            }
+          ]
+        },
+        "supplyUsedLunch": {
+          "mealsCount": 667,
+          "supplyPerMeal": [
+            {
+              "supplyName": "Капуста",
+              "supplyUnit": "кг",
+              "supplyCount": 0.2
+            },
+            {
+              "supplyName": "Морква",
+              "supplyUnit": "кг",
+              "supplyCount": 0.3
+            },
+            {
+              "supplyName": "Гречка",
+              "supplyUnit": "кг",
+              "supplyCount": 0.2
+            }
+          ]
+        },
+        "supplyUsedDiner": {
+          "mealsCount": 667,
+          "supplyPerMeal": [
+            {
+              "supplyName": "Капуста",
+              "supplyUnit": "кг",
+              "supplyCount": 0.5
+            },
+            {
+              "supplyName": "Морква",
+              "supplyUnit": "кг",
+              "supplyCount": 0.1
+            },
+            {
+              "supplyName": "Гречка",
+              "supplyUnit": "кг",
+              "supplyCount": 0.3
+            }
+          ]
+        },
+        "supplyAvailable": [
+          {
+            "supplyName": "Морква",
+            "supplyUnit": "кг",
+            "supplyCount": 100
+          },
+          {
+            "supplyName": "Гречка",
+            "supplyUnit": "кг",
+            "supplyCount": 100
+          },
+          {
+            "supplyName": "Капуста",
+            "supplyUnit": "кг",
+            "supplyCount": 100
+          }
+        ]
+      }
+    },
+    {
+      "id": "78495788",
+      "documentName": "Загальновійськова",
+      "date": "31.10.2023",
+      "documentStatus": "SIGNED",
+      "menuRozkladkaUsage": {
+        "supplyUsedBreakfast": {
+          "mealsCount": 667,
+          "supplyPerMeal": [
+            {
+              "supplyName": "Капуста",
+              "supplyUnit": "кг",
+              "supplyCount": 0.1
+            },
+            {
+              "supplyName": "Морква",
+              "supplyUnit": "кг",
+              "supplyCount": 0.1
+            },
+            {
+              "supplyName": "Гречка",
+              "supplyUnit": "кг",
+              "supplyCount": 0.3
+            }
+          ]
+        },
+        "supplyUsedLunch": {
+          "mealsCount": 667,
+          "supplyPerMeal": [
+            {
+              "supplyName": "Капуста",
+              "supplyUnit": "кг",
+              "supplyCount": 0.2
+            },
+            {
+              "supplyName": "Морква",
+              "supplyUnit": "кг",
+              "supplyCount": 0.3
+            },
+            {
+              "supplyName": "Гречка",
+              "supplyUnit": "кг",
+              "supplyCount": 0.2
+            }
+          ]
+        },
+        "supplyUsedDiner": {
+          "mealsCount": 667,
+          "supplyPerMeal": [
+            {
+              "supplyName": "Капуста",
+              "supplyUnit": "кг",
+              "supplyCount": 0.5
+            },
+            {
+              "supplyName": "Морква",
+              "supplyUnit": "кг",
+              "supplyCount": 0.1
+            },
+            {
+              "supplyName": "Гречка",
+              "supplyUnit": "кг",
+              "supplyCount": 0.3
+            }
+          ]
+        },
+        "supplyAvailable": [
+          {
+            "supplyName": "Морква",
+            "supplyUnit": "кг",
+            "supplyCount": 100
+          },
+          {
+            "supplyName": "Гречка",
+            "supplyUnit": "кг",
+            "supplyCount": 100
+          },
+          {
+            "supplyName": "Капуста",
+            "supplyUnit": "кг",
+            "supplyCount": 100
+          }
+        ]
+      }
+    },
+    {
+      "id": 78495795,
+      "date": "28.12.2023",
+      "documentName": "Загальновійськова",
+      "documentStatus": "UNSIGNED",
+      "menuRozkladkaUsage": {
+        "supplyUsedBreakfast": {
+          "mealsCount": "100",
+          "supplyPerMeal": [
+            {
+              "supplyName": "Морква",
+              "supplyUnit": "кг",
+              "supplyCount": 2
+            },
+            {
+              "supplyName": "Яблуко",
+              "supplyUnit": "кг",
+              "supplyCount": 6
+            }
+          ]
+        },
+        "supplyUsedLunch": {
+          "mealsCount": "120",
+          "supplyPerMeal": [
+            {
+              "supplyName": "Морква",
+              "supplyUnit": "кг",
+              "supplyCount": 1
+            },
+            {
+              "supplyName": "Яблуко",
+              "supplyUnit": "кг",
+              "supplyCount": 3
+            }
+          ]
+        },
+        "supplyUsedDiner": {
+          "mealsCount": "100",
+          "supplyPerMeal": [
+            {
+              "supplyName": "Морква",
+              "supplyUnit": "кг",
+              "supplyCount": 2
+            },
+            {
+              "supplyName": "Яблуко",
+              "supplyUnit": "кг",
+              "supplyCount": 6
+            }
+          ]
+        },
+        "supplyAvailable": [
+          {
+            "supplyName": "Морква",
+            "supplyUnit": "кг",
+            "supplyCount": 100
+          },
+          {
+            "supplyName": "Яблуко",
+            "supplyUnit": "кг",
+            "supplyCount": 100
+          }
+        ]
+      }
+    }
+  ]
+}
