@@ -11,6 +11,7 @@ import deleteIcon from "@public/delete.svg";
 import { showError } from "../utils/notification";
 import moment from "moment";
 import _ from 'lodash';
+import { FButton } from "../components/molecules";
 
 
 const formattedDate = (inputDate) => moment(inputDate, 'YYYY-MM-DD').format('DD.MM.YYYY');
@@ -312,6 +313,7 @@ const Page = () => {
               <Button styleType="primary" height="fit-content" flex="0" fontSize="20px" onClick={openModal()}>
                 {text.button.createOrder}
               </Button>
+              <FButton mainkey="orderHistory" st={{height: "fit-content", flex: "0", fontSize: "20px", margin:"10px"}} />
             </Flex>
             <Table rows={tableData} openModal={openModal} isHistory onDelete={onDelete} />
             <Flex justifyContent="end" margin="40px">

@@ -7,6 +7,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { deleteaccounting, getAllAccountings, updateOrCreateAccounting } from "../store/accountingPage/duck";
 import moment from "moment";
 import { showError } from "../utils/notification";
+import { FButton } from "../components/molecules";
 
 
 const formattedDate = (inputDate) => moment(inputDate, 'YYYY-MM-DD').format('DD.MM.YYYY');
@@ -204,6 +205,7 @@ const Page = () => {
             <Button styleType="primary" width="35%" onClick={openModal()}>
               {text.button.add}
             </Button>
+            <FButton mainkey="accounting" st={{width: "35%", margin: "0px 10px"}} />
           </Flex>
         </Flex>
       </WithSideBlock>
